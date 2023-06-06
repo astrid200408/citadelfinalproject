@@ -4,10 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{poke_nm}}</title>
+    <link rel = "stylesheet" href="./static/css/style.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Coffee Shawty Stocks</title>
 </head>
 <body>
-    <h1>{{poke_nm}}</h1>
-    <img src = "{{ poke_src }}">
+    <!-- <div class = "row">
+        <div class = "col-2"></div>
+        <div class = "col-8"></div>
+        <div class="col-2"></div>
+    </div> -->
+
+    <div class = "body">
+
+        <h1>Coffee Shawty Stocks</h1>
+
+        <div class = "container">
+            <img src="./static/images/Coffee_shop_background.png" class="center">
+
+
+        
+            <!-- Start Game! -->
+            <form method="post" action="/levels">
+                {% if start == False %}
+
+                    <button type="submit" class="btn btn-primary start">Start Now!</button>
+
+                {% else %}
+
+                    <div class="levels d-grid gap-2">
+                        <button class="btn btn-primary" type="button">Level 1</button>
+                        <button class="btn btn-primary" type="button">Level 2</button>
+                    </div>
+
+                {% endif %}
+            </form>
+
+            
+        </div>
+        
+        <br>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
 </body>
 </html>

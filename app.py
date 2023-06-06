@@ -8,13 +8,13 @@ app = Flask(__name__)
 @app.route("/index")
 def index():
 
-    apikey = ""
-    #response = requests.get("https://pokeapi.co/api/v2/pokemon/ditto")
-    response = requests.get("https://pokeapi.co/api/v2/pokemon/ditto" + "?apikey="+apikey)
-    data = response.json()
-    image = data["sprites"]["front_default"]
-    name = data["forms"][0]["name"]
-    return render_template("index.html", poke_src=image, poke_nm = name)
+    return render_template("index.html", start=False)
+
+
+@app.route("/levels", methods = ["GET", "POST"])
+def levels():
+    
+    return render_template("index.html", start =True)
 
 
 if __name__ == "__main__":

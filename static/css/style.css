@@ -1,0 +1,65 @@
+.body {
+    background-color:darkseagreen;
+}
+
+h1{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: beige;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+/* Make the image responsive */
+.container img {
+    width: 60%;
+    height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.start{
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.levels {
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+
+.container .btn:hover {
+    background-color: black;
+}
