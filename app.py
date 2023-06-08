@@ -32,15 +32,25 @@ def marketmaking():
 def game():
     global question_num
     global level
+    global curr_answer
+
+
+    if level == 2:
+        render_template("levelover.html")
+
     questions = get_questions()
     props = questions[level][question_num]
     curr_answer = props["answer"]
-    print(curr_answer)
-    question_num -= 1
+    
+    if question_num == 0 :
+        level += 1
+        question_num = 5
+        
     return render_template("game.html", props=props)
 
 @app.route("/check_a", methods = ["GET", "POST"])
 def check_a():
+    global curr_answer
     if curr_answer == "a":
         return render_template("correct.html")
     else:
@@ -48,6 +58,7 @@ def check_a():
 
 @app.route("/check_b", methods = ["GET", "POST"])
 def check_b():
+    global curr_answer
     if curr_answer == "b":
         return render_template("correct.html")
     else:
@@ -55,6 +66,7 @@ def check_b():
 
 @app.route("/check_c", methods = ["GET", "POST"])
 def check_c():
+    global curr_answer
     if curr_answer == "c":
         return render_template("correct.html")
     else:
@@ -62,6 +74,7 @@ def check_c():
 
 @app.route("/check_d", methods = ["GET", "POST"])
 def check_d():
+    global curr_answer
     if curr_answer == "d":
         return render_template("correct.html")
     else:
