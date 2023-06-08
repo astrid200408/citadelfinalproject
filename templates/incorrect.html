@@ -30,33 +30,25 @@
 
             <br>
 
-            <img src="./static/images/customers/customer1.png" class="character">
+            <img src="./static/images/customer1.png" class="character">
             <img src="./static/images/NicePng_comic-bubble-png_256315.png" class="bubble">
-            <div class = "container question">
-                <p>{{props.question}}</p>
-            </div>
-            
+            <p class="question">Sorry, I don't think that's correct.</p>
 
 
             <form method="post" action="/game">
 
                 <img src="./static/images/reg_background.png" class="center background_img">
-                <p class = "score"> Earnings: 0  Coffee Beans: 0</p>
+                <p class="score"> Earnings: 0 Coffee Beans: 0</p>
 
+                <button type="submit" class="btn btn-dark">Next</button>
 
-                <div class="levels d-grid gap-2 multchoicebox">
-                    <a href="/check_a" class="btn btn-dark btn-sm active" role="button" aria-pressed="true">A. {{props.a}}</a>
-                    <a href="/check_b" class="btn btn-dark btn-sm active" role="button" aria-pressed="true">B. {{props.b}}</a>
-                    <a href="/check_c" class="btn btn-dark btn-sm active" role="button" aria-pressed="true">C. {{props.c}}</a>
-                    <a href="/check_d" class="btn btn-dark btn-sm active" role="button" aria-pressed="true">D. {{props.d}}</a>
-                </div>
             </form>
-           
-           
-           
+
+
+
         </div>
 
-        
+
 
         <br>
 

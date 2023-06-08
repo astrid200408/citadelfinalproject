@@ -94,15 +94,32 @@
 .score {
 
     position: absolute;
-    top: 60%;
+    top: 8%;
     left: 33%;
-    transform: translate(-70%, -50%);
+    transform: translate(-40%, 0%);
     -ms-transform: translate(-50%, -50%);
-    color: white;
-    padding: 12px 24px;
+    color: #6F4E37;
+    /* padding: 12px 24px; */
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    width : 50% !important;
+    height: auto !important;
+
+}
+
+.question{
+
+    position: absolute;
+    top: 30%;
+    left: 59%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: #6F4E37;
+    /* padding: 12px 24px; */
+    border: none;
+    cursor: pointer;
+    /* border-radius: 5px; */
     width : 50% !important;
     height: auto !important;
 
