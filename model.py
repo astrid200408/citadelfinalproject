@@ -12,7 +12,6 @@ def get_questions():
     for x in f:
         
         my_dict = json.loads(x)
-        print(my_dict["question"])
 
         if quest_count ==5 :
             # add first dict to level
@@ -39,6 +38,5 @@ def get_questions():
 
     return questions
 
-print(get_questions())
     
 

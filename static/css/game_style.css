@@ -1,5 +1,5 @@
 .body {
-    background-color:darkseagreen;
+    background-color: darkseagreen;
 }
 
 .header {
@@ -22,20 +22,16 @@
 }
 
 /* Make the image responsive */
-.background_img{
+.background_img {
     width: 80%;
     height: auto;
 }
 
 /* Style the button and place it in the middle of the container/image */
-.start{
+.start {
     position: absolute;
-<<<<<<< HEAD
     top: 75%;
-=======
-    top: 77%;
->>>>>>> 05bfb92aaf8e3dc7c9290beb60bdd9f859c7eb4d
-    left: 33%;
+    left: 28%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: darkseagreen;
@@ -50,7 +46,7 @@
 .levels {
     position: absolute;
     top: 52%;
-    left: 33%;
+    left: 28%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #C19A6B;
@@ -63,7 +59,7 @@
 
 }
 
-.character{
+.character {
     position: absolute;
     top: 60%;
     left: 33%;
@@ -74,7 +70,7 @@
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    width : 50% !important;
+    width: 50% !important;
     height: auto !important;
 
 }
@@ -90,7 +86,7 @@
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    width : 30% !important;
+    width: 30% !important;
     height: auto !important;
 
 }
@@ -107,29 +103,21 @@
     border: none;
     cursor: pointer;
     /* border-radius: 5px; */
-    width : 50% !important;
+    width: 50% !important;
     height: auto !important;
 
 }
 
-.question{
+.question {
 
-    position: absolute;
     top: 30%;
-    left: 59%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    color: #6F4E37;
-    /* padding: 12px 24px; */
-    border: none;
-    cursor: pointer;
-    /* border-radius: 5px; */
-    width : 50% !important;
-    height: auto !important;
+    left: 40%;
 
 }
 
-.btn-dark, .btn-dark:active, .btn-dark:visited {
+.btn-dark,
+.btn-dark:active,
+.btn-dark:visited {
     background-color: #6F4E37 !important;
 }
 
@@ -138,4 +126,4 @@
     width: 40%;
     transform: translate(48%, 38%);
 }
-    
+
