@@ -10,38 +10,39 @@
     <title>Coffee Shawty Stocks</title>
 </head>
 <body>
-    <!-- <div class = "row">
-        <div class = "col-2"></div>
-        <div class = "col-8"></div>
-        <div class="col-2"></div>
-    </div> -->
 
     <div class = "body">
 
-        <h1>Coffee Shawty Stocks</h1>
+        <div class = "row header">
+            <div class = "col-2"></div>
+            <div class = "col-8">
+                <br>
+                <img src="./static/images/financecafe_logo.png" class="center">
+                <br>
+            </div>
+            <div class = "col-2"></div>
+        </div>
+
+            
 
         <div class = "container">
-            <img src="./static/images/Coffee_shop_background.png" class="center">
-
-
         
             <!-- Start Game! -->
             <form method="post" action="/levels">
                 {% if start == False %}
-
-                    <button type="submit" class="btn btn-primary start">Start Now!</button>
-
+                    <br>
+                    <img src="./static/images/new_background.png" class="center">
+                    <button type="submit" class="btn btn-dark start">Start Now!</button>
                 {% else %}
-
-                    <div class="levels d-grid gap-2">
-                        <button class="btn btn-primary" type="button">Level 1</button>
-                        <button class="btn btn-primary" type="button">Level 2</button>
+                    <br>
+                    <img src="./static/images/reg_background.png" class="center">
+                    <div class="levels d-grid gap-2"> 
+                        <a href="/financialvocab" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Financial Vocabulary</a>
+                        <a href="/marketmaking" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Market Making</a>
                     </div>
-
                 {% endif %}
             </form>
 
-            
         </div>
         
         <br>

@@ -1,0 +1,51 @@
+.carousel{
+    width: 70%;
+    height: auto;
+}
+
+.background {
+    background-color: darkseagreen;
+}
+
+
+
+.header {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: beige;
+}
+
+.btn-dark, .btn-dark:active, .btn-dark:visited {
+    background-color: #6F4E37 !important;
+}
+.home-start{
+    width : 40%;
+    height : auto;
+    padding-bottom: 60px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+/* Make the image responsive */
+.container img {
+    width: 60%;
+    height: auto;
+}
+
+.translate1{
+    transform: translateX(-80%);
+}
+
+.translate2 {
+    transform: translateX(80%);
+}

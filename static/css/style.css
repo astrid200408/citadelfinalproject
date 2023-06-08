@@ -2,7 +2,7 @@
     background-color:darkseagreen;
 }
 
-h1{
+.header {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -22,19 +22,19 @@ h1{
 }
 
 /* Make the image responsive */
-.container img {
-    width: 60%;
+.background_img{
+    width: 80%;
     height: auto;
 }
 
 /* Style the button and place it in the middle of the container/image */
 .start{
     position: absolute;
-    top: 50%;
-    left: 33%;
+    top: 75%;
+    left: 28%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #555;
+    background-color: darkseagreen;
     color: white;
     font-size: 16px;
     padding: 12px 24px;
@@ -45,11 +45,11 @@ h1{
 
 .levels {
     position: absolute;
-    top: 50%;
-    left: 33%;
+    top: 52%;
+    left: 28%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #555;
+    background-color: #C19A6B;
     color: white;
     font-size: 16px;
     padding: 12px 24px;
@@ -59,7 +59,62 @@ h1{
 
 }
 
+.character{
+    position: absolute;
+    top: 60%;
+    left: 33%;
+    transform: translate(-70%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width : 50% !important;
+    height: auto !important;
 
-.container .btn:hover {
-    background-color: black;
 }
+
+.bubble {
+    position: absolute;
+    top: 60%;
+    left: 33%;
+    transform: translate(-25%, -100%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width : 30% !important;
+    height: auto !important;
+
+}
+
+.score {
+
+    position: absolute;
+    top: 60%;
+    left: 33%;
+    transform: translate(-70%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width : 50% !important;
+    height: auto !important;
+
+}
+
+.btn-dark, .btn-dark:active, .btn-dark:visited {
+    background-color: #6F4E37 !important;
+}
+
+
+.multchoicebox {
+    width: 40%;
+    transform: translate(48%, 38%);
+}
+    
