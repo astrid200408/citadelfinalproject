@@ -136,15 +136,15 @@
 
 .next {
     position: absolute;
-    top: 90%;
-    left: 83%;
+    top: 92%;
+    left: 80%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     color: white;
-    font-size: 16px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 15px;
+    width: 12%;
 }
 
 .earningstxt {
