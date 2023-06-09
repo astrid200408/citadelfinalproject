@@ -75,7 +75,7 @@ def check_a():
     if curr_answer == "a":
         return correct()
     else:
-        return render_template("incorrect.html")
+        return incorrect()
     
 
 
@@ -85,7 +85,7 @@ def check_b():
     if curr_answer == "b":
         return correct()
     else:
-        return render_template("incorrect.html")
+        return incorrect()
     
 
 
@@ -95,7 +95,7 @@ def check_c():
     if curr_answer == "c":
         return correct()
     else:
-        return render_template("incorrect.html")
+        return incorrect()
     
 
 
@@ -105,7 +105,7 @@ def check_d():
     if curr_answer == "d":
         return correct()
     else:
-        return render_template("incorrect.html")
+        return incorrect()
     
 
     
