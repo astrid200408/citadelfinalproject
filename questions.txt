@@ -8,5 +8,3 @@
 {"id":"8", "level":"2", "question":"What conditions can impact liquidity?", "a":"Timing, Size, Complexity", "b":"Inventory Management, Inventory Marketing, Sales, Trading", "c":"Desk Trader, Salesperson, Desk Analyst", "d":"Cash, Standardized Derivatives, OTC Derivatives, Index Products", "answer": "a"}
 {"id":"9", "level":"2", "question":"What gives the holder the right to buy or sell the cash product?", "a":"Cash", "b":"Standardized Derivatives", "c":"OTC Derivatives", "d":"Index Products","answer": "b"}
 {"id":"10", "level":"2", "question":"What is an attribute of low transaction markets?", "a":"Large number of market participants", "b":"Highly standardized products", "c":"Natural demand to trade", "d":"Poor quality market data","answer": "d"}
-
-
