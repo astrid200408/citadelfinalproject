@@ -147,15 +147,27 @@
     border-radius: 5px;
 }
 
-.score {
-    top: 4% !important;
-    left: 10.5%;
-    color: white;
-    background-color: #6F4E37;
-    padding: 12px 24px;
+.earningstxt {
+    top: 45% !important;
+    left: 46%;
+    color: darkgreen;
+    background-color: transparent;
+    padding: 6px 22px;
     position: absolute;
     z-index: 10;
 }
+
+.coffeestockstxt{
+    top: 50% !important;
+    left: 49%;
+    color: darkgreen;
+    background-color: transparent;
+    padding: 6px 22px;
+    position: absolute;
+    z-index: 10;
+}
+
+
 
 .home{
     position: absolute;
