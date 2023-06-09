@@ -129,7 +129,18 @@ def correct():
 
 @app.route("/incorrect", methods = ["GET", "POST"])
 def incorrect():
-    return render_template("incorrect.html")
+
+    global earnings 
+    global coffee_stocks
+    global correct_answer
+
+    
+    props = {
+        "earnings" : earnings,
+        "coffee_stocks" : coffee_stocks,
+    }
+    
+    return render_template("incorrect.html", props=props)
 
 
 
