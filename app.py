@@ -21,9 +21,13 @@ def index():
 def levels():
     return render_template("index.html", start =True)
 
+
+
 @app.route("/financialvocab", methods = ["GET", "POST"])
 def financialvocab():
     return render_template("financialvocab.html")
+
+
 
 @app.route("/financialvocab_game", methods = ["GET", "POST"])
 def financialvocab_game():
@@ -32,9 +36,13 @@ def financialvocab_game():
     level = 1
     question_num = 4
 
+
+
 @app.route("/marketmaking", methods = ["GET", "POST"])
 def marketmaking():
     return render_template("marketmaking.html")
+
+
 
 @app.route("/marketmaking_game", methods = ["GET", "POST"])
 def marketmaking_game():
@@ -43,6 +51,8 @@ def marketmaking_game():
     level = 2 
     question_num = 4
     return game()
+
+
 
 @app.route("/game", methods = ["GET", "POST"])
 def game():
@@ -56,8 +66,9 @@ def game():
     props = questions[level][question_num]
     curr_answer = props["answer"]
 
-    
     return render_template("game.html", props=props, earnings=earnings, coffee_stocks=coffee_stocks)
+
+
 
 @app.route("/check_a", methods = ["GET", "POST"])
 def check_a():
@@ -66,6 +77,8 @@ def check_a():
         return correct()
     else:
         return render_template("incorrect.html")
+    
+
 
 @app.route("/check_b", methods = ["GET", "POST"])
 def check_b():
@@ -74,6 +87,8 @@ def check_b():
         return correct()
     else:
         return render_template("incorrect.html")
+    
+
 
 @app.route("/check_c", methods = ["GET", "POST"])
 def check_c():
@@ -82,6 +97,8 @@ def check_c():
         return correct()
     else:
         return render_template("incorrect.html")
+    
+
 
 @app.route("/check_d", methods = ["GET", "POST"])
 def check_d():
@@ -91,16 +108,13 @@ def check_d():
     else:
         return render_template("incorrect.html")
     
+
+    
 @app.route("/correct", methods = ["GET", "POST"])
 def correct():
     global earnings 
     global coffee_stocks
     global correct_answer
-
-    if correct_answer == False:
-        earnings += 20
-        coffee_stocks += 5
-        correct_answer == True
 
     
     props = {
@@ -108,12 +122,16 @@ def correct():
         "coffee_stocks" : coffee_stocks,
     }
     
-    print(props)
+
     return render_template("correct.html", props=props)
+
+
 
 @app.route("/incorrect", methods = ["GET", "POST"])
 def incorrect():
     return render_template("incorrect.html")
+
+
 
 @app.route("/next", methods = ["GET", "POST"])
 def next():
@@ -130,6 +148,8 @@ def next():
         
     return game()
 
+
+
 @app.route("/level_over", methods = ["GET", "POST"])
 def level_over():
 
@@ -142,6 +162,23 @@ def level_over():
     }
 
     return render_template("level_over.html", props=props)
+
+@app.route("/stock", methods=["GET", "POST"])
+def stock():
+
+    global earnings 
+    global coffee_stocks
+    if correct_answer == False:
+        earnings += 20
+        coffee_stocks += 18
+        correct_answer == True
+
+    props = {
+        "earnings" : earnings,
+        "coffee_stocks" : coffee_stocks,
+    }
+
+    return render_template("stock.html", props=props)
 
 
 
