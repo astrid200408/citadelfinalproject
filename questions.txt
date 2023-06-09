@@ -3,3 +3,10 @@
 {"id":"3", "level":"1", "question":"Which strategy is associated with attempting to beat the market?", "a":"Alpha (Active)","b":"Alpha (Active)", "c":"Buy and hold strategy", "d":"Short selling","answer": "a"}
 {"id":"4", "level":"1", "question":"What conditions are necessary for successful passive investing?", "a":"Highly specialized knowledge of market trends", "b":"Active management and frequent trading", "c": "A highly standardized product","d":"Complex derivative instruments", "answer": "c"}
 {"id":"5", "level":"1", "question":"Which role in asset management manages potential risks associated with investment strategies?", "a":"Compliance Officer", "b":"Risk Manager", "c":"Portfolio Manager","d":"Research Analyst", "answer": "b"}
+{"id":"6", "level":"2", "question":"Who are the market makers?", "a":"Broker-Dealers", "b":"Specialists", "c":"Liquidity Providers", "d":"All of the Above", "answer": "d"}
+{"id":"7", "level":"2", "question":"How can trading be made easier?", "a":"Brokering", "b":"Dealing", "c":"Both a and b", "d":"Neither a nor b", "answer": "c"}
+{"id":"8", "level":"2", "question":"What conditions can impact liquidity?", "a":"Timing, Size, Complexity", "b":"Inventory Management, Inventory Marketing, Sales, Trading", "c":"Desk Trader, Salesperson, Desk Analyst", "d":"Cash, Standardized Derivatives, OTC Derivatives, Index Products", "answer": "a"}
+{"id":"9", "level":"2", "question":"What gives the holder the right to buy or sell the cash product?", "a":"Cash", "b":"Standardized Derivatives", "c":"OTC Derivatives", "d":"Index Products","answer": "b"}
+{"id":"10", "level":"2", "question":"What is an attribute of low transaction markets?", "a":"Large number of market participants", "b":"Highly standardized products", "c":"Natural demand to trade", "d":"Poor quality market data","answer": "d"}
+
+
