@@ -34,18 +34,10 @@ def game():
     global level
     global curr_answer
 
-
-    if level == 2:
-        render_template("levelover.html")
-
     questions = get_questions()
     props = questions[level][question_num]
     curr_answer = props["answer"]
     
-    if question_num == 0 :
-        level += 1
-        question_num = 5
-        
     return render_template("game.html", props=props)
 
 @app.route("/check_a", methods = ["GET", "POST"])
@@ -79,6 +71,24 @@ def check_d():
         return render_template("correct.html")
     else:
         return render_template("incorrect.html")
+    
+@app.route("/correct", methods = ["GET", "POST"])
+def correct():
+    return render_template("correct.html")
+
+@app.route("/incorrect", methods = ["GET", "POST"])
+def incorrect():
+    return render_template("incorrect.html")
+
+@app.route("/next", methods = ["GET", "POST"])
+def next():
+    global question_num
+    global level
+
+    question_num -= 1
+    if question_num == 0:
+        level += 1
+    return game()
 
 
 
