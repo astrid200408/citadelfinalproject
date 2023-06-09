@@ -148,9 +148,9 @@
 }
 
 .earningstxt {
-    top: 45% !important;
+    top: 41% !important;
     left: 46%;
-    color: darkgreen;
+    color: #644229;
     background-color: transparent;
     padding: 6px 22px;
     position: absolute;
@@ -158,9 +158,9 @@
 }
 
 .coffeestockstxt{
-    top: 50% !important;
-    left: 49%;
-    color: darkgreen;
+    top: 46% !important;
+    left: 50%;
+    color: #644229;
     background-color: transparent;
     padding: 6px 22px;
     position: absolute;
