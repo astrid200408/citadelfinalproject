@@ -97,11 +97,11 @@
 
 .multchoicebox {
     width: 40%;
-    transform: translate(120%, -110%) !important;
+    transform: translate(120%, -90%) !important;
     position: relative;
     z-index: 7;
     background-color: beige;
-    padding: 12px 24px;
+    padding: 8px 20px;
 }
 
 
