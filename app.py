@@ -35,6 +35,7 @@ def financialvocab_game():
     global question_num
     level = 1
     question_num = 4
+    return game()
 
 
 
