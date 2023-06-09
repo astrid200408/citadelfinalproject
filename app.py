@@ -101,7 +101,6 @@ def correct():
         earnings += 20
         coffee_stocks += 5
         correct_answer == True
-    
 
     
     props = {
