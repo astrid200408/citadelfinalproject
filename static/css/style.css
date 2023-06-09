@@ -117,10 +117,8 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     color: #6F4E37;
-    /* padding: 12px 24px; */
     border: none;
     cursor: pointer;
-    /* border-radius: 5px; */
     width : 50% !important;
     height: auto !important;
 
@@ -134,5 +132,20 @@
 .multchoicebox {
     width: 40%;
     transform: translate(48%, 38%);
+}
+
+.answerresult{
+    position: absolute;
+    top: 30%;
+    left: 59%;
+    transform: translate(-52%, 20%);
+    -ms-transform: translate(-50%, -50%);
+    color: black;
+    border: none;
+    cursor: pointer;
+    width : 50% !important;
+    height: auto !important;
+    font-size: 20px;
+    font-weight: 600;
 }
     
