@@ -9,6 +9,8 @@ app = Flask(__name__)
 question_num = 4
 level = 1
 curr_answer = ""
+earnings = 0
+coffee_stocks = 0
 
 @app.route("/", methods = ["GET", "POST"])
 @app.route("/index")
@@ -33,18 +35,21 @@ def game():
     global question_num
     global level
     global curr_answer
+    global earnings
+    global coffee_stocks
 
     questions = get_questions()
     props = questions[level][question_num]
     curr_answer = props["answer"]
+
     
-    return render_template("game.html", props=props)
+    return render_template("game.html", props=props, earnings=earnings, coffee_stocks=coffee_stocks)
 
 @app.route("/check_a", methods = ["GET", "POST"])
 def check_a():
     global curr_answer
     if curr_answer == "a":
-        return render_template("correct.html")
+        return correct()
     else:
         return render_template("incorrect.html")
 
@@ -52,7 +57,7 @@ def check_a():
 def check_b():
     global curr_answer
     if curr_answer == "b":
-        return render_template("correct.html")
+        return correct()
     else:
         return render_template("incorrect.html")
 
@@ -60,7 +65,7 @@ def check_b():
 def check_c():
     global curr_answer
     if curr_answer == "c":
-        return render_template("correct.html")
+        return correct()
     else:
         return render_template("incorrect.html")
 
@@ -68,13 +73,23 @@ def check_c():
 def check_d():
     global curr_answer
     if curr_answer == "d":
-        return render_template("correct.html")
+        return correct()
     else:
         return render_template("incorrect.html")
     
 @app.route("/correct", methods = ["GET", "POST"])
 def correct():
-    return render_template("correct.html")
+    global earnings 
+    global coffee_stocks
+    earnings += 20
+    coffee_stocks += 5
+
+    props = {
+        "earnings" : earnings,
+        "coffee_stocks" : coffee_stocks,
+    }
+    
+    return render_template("correct.html", props=props)
 
 @app.route("/incorrect", methods = ["GET", "POST"])
 def incorrect():
@@ -89,8 +104,13 @@ def next():
     if question_num == 0:
         level += 1
         question_num = 4
+        return level_over()
         
     return game()
+
+@app.route("/level_over", methods = ["GET", "POST"])
+def level_over():
+    return render_template("level_over.html")
 
 
 
