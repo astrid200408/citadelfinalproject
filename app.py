@@ -1,8 +1,6 @@
 from flask import Flask, render_template
 from model import get_questions
 
-
-
 app = Flask(__name__)
 question_num = 4
 level = 1
@@ -129,7 +127,18 @@ def correct():
 
 @app.route("/incorrect", methods = ["GET", "POST"])
 def incorrect():
-    return render_template("incorrect.html")
+
+    global earnings 
+    global coffee_stocks
+    global correct_answer
+
+    
+    props = {
+        "earnings" : earnings,
+        "coffee_stocks" : coffee_stocks,
+    }
+    
+    return render_template("incorrect.html", props=props)
 
 
 
@@ -179,6 +188,19 @@ def stock():
     }
 
     return render_template("stock.html", props=props)
+
+@app.route("/order", methods = ["GET", "POST"])
+def order():
+
+    global earnings 
+    global coffee_stocks
+
+    props = {
+        "earnings" : earnings,
+        "coffee_stocks" : coffee_stocks,
+    }
+
+    return render_template("order.html", props=props)
 
 
 
