@@ -84,11 +84,13 @@ def correct():
     earnings += 20
     coffee_stocks += 5
 
+    
     props = {
         "earnings" : earnings,
         "coffee_stocks" : coffee_stocks,
     }
     
+    print(props)
     return render_template("correct.html", props=props)
 
 @app.route("/incorrect", methods = ["GET", "POST"])
