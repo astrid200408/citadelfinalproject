@@ -9,15 +9,15 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Finance Cafe</title>
 </head>
-<body>
-
-    <div class = "body">
+<body class = "background">
 
         <div class = "row header">
             <div class = "col-2"></div>
             <div class = "col-8">
                 <br>
-                <img src="./static/images/financecafe_logo.png" class="center">
+                <a href="/index">
+                    <img src="./static/images/financecafe_logo.png" class="center">
+                </a>
                 <br>
             </div>
             <div class = "col-2"></div>
@@ -37,8 +37,8 @@
                     <br>
                     <img src="./static/images/reg_background.png" class="center">
                     <div class="levels d-grid gap-2"> 
-                        <a href="/financialvocab" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Financial Vocabulary</a>
-                        <a href="/marketmaking" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Market Making</a>
+                        <a href="/financialvocab" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">1. Financial Vocabulary</a>
+                        <a href="/marketmaking" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">2. Market Making</a>
                     </div>
                 {% endif %}
             </form>
@@ -46,8 +46,6 @@
         </div>
         
         <br>
-
-    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

@@ -88,6 +88,8 @@ def next():
     question_num -= 1
     if question_num == 0:
         level += 1
+        question_num = 4
+        
     return game()
 
 
