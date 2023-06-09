@@ -26,7 +26,7 @@ def get_questions():
             questions[level_count] = new_list
 
             # go to next level 
-            quest_count == 5
+            quest_count = 5
             level_count+=1
 
         else:
@@ -37,6 +37,4 @@ def get_questions():
     f.close()
 
     return questions
-
-    
 
