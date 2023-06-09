@@ -16,7 +16,6 @@
     width: 60%;
 }
 
-/* Make the image responsive */
 .background_img {
     width: 80%;
     height: auto;
@@ -121,17 +120,12 @@
 }
 
 .score {
-    top: 50%;
-    left: 33%;
-    transform: translate(-48%, -2080%) !important;
-    -ms-transform: translate(-50%, -50%);
+    top: 5% !important;
+    left: 10%;
     color: white;
     background-color: #6F4E37;
-    border: none;
-    cursor: pointer;
-    width: 50% !important;
-    height: auto !important;
-    position: relative;
+    padding: 12px 24px;
+    position: absolute;
     z-index: 10;
 }
 
