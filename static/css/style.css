@@ -93,23 +93,6 @@
 
 }
 
-.score {
-
-    position: absolute;
-    top: 8%;
-    left: 33%;
-    transform: translate(-40%, 0%);
-    -ms-transform: translate(-50%, -50%);
-    color: #6F4E37;
-    /* padding: 12px 24px; */
-    border: none;
-    cursor: pointer;
-    /* border-radius: 5px; */
-    width : 50% !important;
-    height: auto !important;
-
-}
-
 .question{
 
     position: absolute;
@@ -164,4 +147,14 @@
     border: none;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.score {
+    top: 4% !important;
+    left: 10.5%;
+    color: white;
+    background-color: #6F4E37;
+    padding: 12px 24px;
+    position: absolute;
+    z-index: 10;
 }
