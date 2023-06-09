@@ -11,6 +11,7 @@ level = 1
 curr_answer = ""
 earnings = 0
 coffee_stocks = 0
+correct_answer = False
 
 @app.route("/", methods = ["GET", "POST"])
 @app.route("/index")
