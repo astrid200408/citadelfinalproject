@@ -1,7 +1,5 @@
 from flask import Flask, render_template
-import requests
 from model import get_questions
-import json
 
 
 
@@ -27,9 +25,24 @@ def levels():
 def financialvocab():
     return render_template("financialvocab.html")
 
+@app.route("/financialvocab_game", methods = ["GET", "POST"])
+def financialvocab_game():
+    global level
+    global question_num
+    level = 1
+    question_num = 4
+
 @app.route("/marketmaking", methods = ["GET", "POST"])
 def marketmaking():
     return render_template("marketmaking.html")
+
+@app.route("/marketmaking_game", methods = ["GET", "POST"])
+def marketmaking_game():
+    global level
+    global question_num
+    level = 2 
+    question_num = 4
+    return game()
 
 @app.route("/game", methods = ["GET", "POST"])
 def game():
@@ -82,8 +95,13 @@ def check_d():
 def correct():
     global earnings 
     global coffee_stocks
-    earnings += 20
-    coffee_stocks += 5
+    global correct_answer
+
+    if correct_answer == False:
+        earnings += 20
+        coffee_stocks += 5
+        correct_answer == True
+    
 
     
     props = {
@@ -102,8 +120,10 @@ def incorrect():
 def next():
     global question_num
     global level
+    global correct_answer
 
     question_num -= 1
+    correct_answer == False
     if question_num == 0:
         level += 1
         question_num = 4
@@ -113,7 +133,16 @@ def next():
 
 @app.route("/level_over", methods = ["GET", "POST"])
 def level_over():
-    return render_template("level_over.html")
+
+    global earnings 
+    global coffee_stocks
+
+    props = {
+        "earnings" : earnings,
+        "coffee_stocks" : coffee_stocks,
+    }
+
+    return render_template("level_over.html", props=props)
 
 
 

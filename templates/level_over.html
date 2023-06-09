@@ -32,14 +32,16 @@
 
         <br>
 
-
-
         <form method="post" action="/next">
 
-            <img src="./static/images/reg_background.png" class="center background_img">
-            <p class="score"> Earnings: 0 Coffee Beans: 0</p>
+            <img src="./static/images/congrats.png" class="center background_img">
+            <h1 class = "score"> ${{props.earnings}} </h1>
+            <h1 class="score">{{props.coffee_stocks}}</h1>
 
-            <button type="submit" class="btn btn-dark next">Next</button>
+            <div class="d-grid gap-2 next">
+                <button class="btn btn-dark" type="submit">Next</button>
+                <a class="btn btn-dark" type="button" href="/index">Home</a>
+            </div>
 
         </form>
 
